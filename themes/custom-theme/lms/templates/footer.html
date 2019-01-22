@@ -9,7 +9,7 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
-% if uses_bootstrap:
+<!--% if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
       <div class="row">
@@ -46,19 +46,19 @@
           ## through an API to partner sites (such as marketing sites or blogs),
           ## which are not technically powered by Open edX.
           % if not hide_openedx_link:
-            <!--<div class="footer-about-openedx">
+            <div class="footer-about-openedx">
               <p>
                 <a href="${footer['openedx_link']['url']}">
                   <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
                 </a>
               </p>
-            </div>-->
+            </div>
           % endif
         </div>
       </div>
     </footer>
   </div>
-% else:
+% else:-->
   <div class="wrapper wrapper-footer">
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
@@ -117,7 +117,7 @@
       ## The OpenEdX link may be hidden when this view is served
       ## through an API to partner sites (such as marketing sites or blogs),
       ## which are not technically powered by OpenEdX.
-      % if not hide_openedx_link:
+      <!--% if not hide_openedx_link:
       <div class="footer-about-openedx">
         <p>
           <a href="${footer['openedx_link']['url']}">
@@ -125,10 +125,10 @@
           </a>
         </p>
       </div>
-      % endif
+      % endif-->
     </footer>
   </div>
-% endif
+<!--% endif-->
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
