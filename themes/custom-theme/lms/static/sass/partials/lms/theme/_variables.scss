@@ -4,11 +4,20 @@
 //
 // Note: define colors needed by your theme first
 
-// Define the primary red color
+// Define the primary color
 $brown-main: #b87349;
 
-// Make red the primary color
-$primary: $brown-main;
+// Define the secondary color
+$green-main: #b87349;
+
+// Make brown the primary color
+$primary:    $brown-main;
+
+// Make green the secondary color
+$secondary:  $green-main;
+
+// Theme fonts
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
 
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
