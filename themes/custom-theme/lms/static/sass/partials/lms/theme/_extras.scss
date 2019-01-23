@@ -6,13 +6,28 @@
 // partials directly into this file so that you can break your
 // rules into modular pieces.
 
-.global-header .header-logo a .logo { height:70px; }
+.global-header .header-logo a .logo { height:70px !important; }
+.global-header .nav-links .main { margin:41px 0 0 40px !important; }
+.global-header .header-logo .course-header { margin:41px 40px 0 40px !important; }
+
 .home>header { background-image: url(https://www.unanicentro.com/web/image/25375/footer.jpg); background-size: auto 100%; background-position: top right;}
 .home>header .title { box-shadow:0 0 0 0 rgba(0,0,0,0); background:rgba(255, 255, 255, 0.5);}
 .home>header .title>.heading-group h1{ text-align:center; }
+
 .wrapper-footer { padding:10px 40px 20px 40px; }
-.wrapper-footer footer#footer-openedx .wrapper-logo a { max-width:162px; }
-.wrapper-footer footer#footer-openedx .wrapper-logo a img { width:100%; }
+.wrapper-footer footer.footerna { width:100%; max-width:100%; margin:0; margin-left:0; margin-right:0; }
+.wrapper-footer footer.footerna .colophon { width:100%; }
+.wrapper-footer footer.footerna .wrapper-logo a { max-width:162px; }
+.wrapper-footer footer.footerna .wrapper-logo a img { width:100%; }
+.wrapper-footer footer.footerna .copyright { margin:10px; }
+
+.view-register .introduction header h1, .view-login .introduction header h1, .view-passwordreset .introduction header h1 { text-align: center; margin-bottom: 0; padding-bottom: 20px; margin-top: 20px; padding-top: 20px; }
+
 .login .content, .register .content, .passwordreset .content, #forgot-password-modal #password-reset .content { float:none; margin:auto; margin-right:auto; width:500px; }
-.global-header .nav-links .main { margin:41px 0 0 20px; }
+
+.dashboard .main-container .my-courses .course .details .enter-course, .wrapper-messages-primary .message.message-upsell .action-view-consent { color: #264134 !important;}
+
+.verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:hover, .dashboard .main-container .my-courses .course .details .enter-course:hover, .wrapper-messages-primary .message.message-upsell .action-view-consent:hover, .wrapper-messages-primary .message.message-status .verification-cta .btn:hover, .wrapper-messages-primary .message.message-status .credit-action .credit-btn:hover, .btn-secondary:hover, .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:hover, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:hover, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order-lines .u-field-order-link .u-field-link:hover, .account-settings-sections .section .account-deletion-details .btn-outline-primary:hover, .account-settings-sections .section .account-deletion-details .delete-confirmation-wrapper .paragon__modal-footer .paragon__btn-outline-primary:hover, .courseware-bookmarks-button .bookmarks-list-button:hover, .verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:focus, .dashboard .main-container .my-courses .course .details .enter-course:focus, .wrapper-messages-primary .message.message-upsell .action-view-consent:focus, .wrapper-messages-primary .message.message-status .verification-cta .btn:focus, .wrapper-messages-primary .message.message-status .credit-action .credit-btn:focus, .btn-secondary:focus, .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:focus, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:focus, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order-lines .u-field-order-link .u-field-link:focus, .account-settings-sections .section .account-deletion-details .btn-outline-primary:focus, .account-settings-sections .section .account-deletion-details .delete-confirmation-wrapper .paragon__modal-footer .paragon__btn-outline-primary:focus, .courseware-bookmarks-button .bookmarks-list-button:focus {  background-color:#264134 !important; }
+
+.wrapper-preview-menu {background-color:#264134 !important;}
 

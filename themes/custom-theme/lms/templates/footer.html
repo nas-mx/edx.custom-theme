@@ -10,7 +10,7 @@
 <%namespace name='static' file='static_content.html'/>
 
   <div class="wrapper wrapper-footer">
-    <footer id="footer-openedx" class="grid-container"
+    <footer id="footer-openedx" class="grid-container footerna"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
       ## so we set it here.
@@ -48,10 +48,9 @@
           </p>
         </div>
 
-        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+        <p class="copyright">Copyright © Unani Centro CDMX</p>
 
-        <nav class="nav-legal" aria-label="${_('Legal')}">
+        <!--<nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
             % for item_num, link in enumerate(footer['legal_links'], start=1):
               <li class="nav-legal-0${item_num}">
@@ -60,7 +59,7 @@
             % endfor
             <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
           </ul>
-        </nav>
+        </nav>-->
       </div>
     </footer>
   </div>

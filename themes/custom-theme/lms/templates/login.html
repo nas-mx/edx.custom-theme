@@ -88,7 +88,7 @@ from third_party_auth import provider, pipeline
           removeClass('is-disabled').
           attr('aria-disabled', false).
           prop('disabled', false).
-          html("${_('Log into My {platform_name} Account').format(platform_name=platform_name)} <span class='orn-plus'>+</span> ${_('Access My Courses')}");
+          html("Iniciar sesión");
       }
       else {
         $submitButton.
@@ -118,7 +118,7 @@ from third_party_auth import provider, pipeline
 
 <section class="introduction">
   <header>
-    <h1 class="title">
+    <h1>
       <span class="title-super">${_("Please log in")}</span>
       <span class="title-sub">${_("to access your account and courses")}</span>
     </h1>
