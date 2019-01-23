@@ -22,6 +22,7 @@
 .wrapper-footer footer.footerna .copyright { margin:10px; font-size: 0.6875em; color: #767676; text-align: left;}
 
 .view-register .introduction header h1, .view-login .introduction header h1, .view-passwordreset .introduction header h1 { text-align: center; margin-bottom: 0; padding-bottom: 20px; margin-top: 20px; padding-top: 20px; }
+.view-login .introduction header{ height:auto !important; background: none !important; }
 
 .login .content, .register .content, .passwordreset .content, #forgot-password-modal #password-reset .content { float:none; margin:auto; margin-right:auto; width:500px; }
 
