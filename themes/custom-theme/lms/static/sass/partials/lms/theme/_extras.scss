@@ -6,19 +6,24 @@
 // partials directly into this file so that you can break your
 // rules into modular pieces.
 
-.global-header .header-logo a .logo { height:70px !important; }
+body{font-family: 'Roboto', sans-serif;}
+
+.global-header .header-logo a .logo { height:80px !important; }
 .global-header .nav-links .main { margin:41px 0 0 40px !important; }
 .global-header .header-logo .course-header { margin:41px 40px 0 40px !important; }
 
-.home>header { background-image: url(https://www.unanicentro.com/web/image/25375/footer.jpg); background-size: auto 100%; background-position: top right;}
-.home>header .title { box-shadow:0 0 0 0 rgba(0,0,0,0); background:rgba(255, 255, 255, 0.5);}
+.home>header { background-image: url('../images/home_bg.png'); background-size: 100% auto; background-position: center center; height: 500px; background-repeat: no-repeat;}
+.home>header .outer-wrapper { height: 500px;}
+.home>header .title { background: none; color: white; float:none;}
 .home>header .title>.heading-group h1{ text-align:center; }
+
+.content-wrapper { padding:0px !important; margin-top:0 !important;}
 
 .wrapper-footer { padding:10px 40px 20px 40px; }
 .wrapper-footer footer.footerna { width:100%; max-width:100%; margin:0; margin-left:0; margin-right:0; }
 .wrapper-footer footer.footerna .colophon { width:100%; }
 .wrapper-footer footer.footerna .wrapper-logo a { max-width:162px; display:inline-block !important;}
-.wrapper-footer footer.footerna .wrapper-logo a img { width:100%; }
+.wrapper-footer footer.footerna .wrapper-logo a img { width:50%; }
 .wrapper-footer footer.footerna .copyright { margin:10px; font-size: 0.6875em; color: #767676; text-align: left;}
 
 .view-register .introduction header h1, .view-login .introduction header h1, .view-passwordreset .introduction header h1 { text-align: center; margin-bottom: 0; padding-bottom: 20px; margin-top: 20px; padding-top: 20px; }
