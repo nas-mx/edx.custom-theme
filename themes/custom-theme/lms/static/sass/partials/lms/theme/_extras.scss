@@ -14,7 +14,7 @@ body{font-family: 'Roboto', sans-serif;}
 .global-header .header-logo .course-header { margin:41px 40px 0 40px !important; }
 
 .home>header { background-image: url('../images/home_bg.png'); background-size: 100% auto; background-position: center center; height: 500px; background-repeat: no-repeat;
-				box-shadow:#000000 0px 0px 15px inset;}
+				box-shadow:#000000 0px 0px 15px inset; border-top: 10px solid #009dd8; border-bottom: 10px solid #009dd8;}
 .home>header .outer-wrapper { height: 500px;}
 .home>header .title { background: none; color: white; float:none; box-shadow:0 4px 5px 0 rgba(0,0,0,0); height:100%; display:table;}
 .home>header .title>.heading-group h1{ text-align:center; display: table-cell; height: 100%; vertical-align: middle; padding-bottom:0; text-shadow:0 3px 3px rgba(0,0,0,0.8);}
