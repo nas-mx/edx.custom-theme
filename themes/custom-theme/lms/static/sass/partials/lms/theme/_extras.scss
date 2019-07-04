@@ -8,18 +8,20 @@
 
 body{font-family: 'Roboto', sans-serif;}
 
+.global-header { border-bottom:none; }
 .global-header .header-logo a .logo { height:80px !important; }
 .global-header .nav-links .main { margin:41px 0 0 40px !important; }
 .global-header .header-logo .course-header { margin:41px 40px 0 40px !important; }
 
-.home>header { background-image: url('../images/home_bg.png'); background-size: 100% auto; background-position: center center; height: 500px; background-repeat: no-repeat;}
+.home>header { background-image: url('../images/home_bg.png'); background-size: 100% auto; background-position: center center; height: 500px; background-repeat: no-repeat;
+				box-shadow:#000000 0px 0px 15px inset;}
 .home>header .outer-wrapper { height: 500px;}
-.home>header .title { background: none; color: white; float:none;}
-.home>header .title>.heading-group h1{ text-align:center; }
+.home>header .title { background: none; color: white; float:none; box-shadow:0 4px 5px 0 rgba(0,0,0,0); height:100%; display:table;}
+.home>header .title>.heading-group h1{ text-align:center; display: table-cell; height: 100%; vertical-align: middle; padding-bottom:0; text-shadow:0 3px 3px rgba(0,0,0,0.8);}
 
 .content-wrapper { padding:0px !important; margin-top:0 !important;}
 
-.wrapper-footer { padding:10px 40px 20px 40px; }
+.wrapper-footer { padding:10px 40px 20px 40px; box-shadow: 0 -1px 5px 0 rgba(0,0,0,0);}
 .wrapper-footer footer.footerna { width:100%; max-width:100%; margin:0; margin-left:0; margin-right:0; }
 .wrapper-footer footer.footerna .colophon { width:100%; }
 .wrapper-footer footer.footerna .wrapper-logo a { max-width:162px; display:inline-block !important;}
