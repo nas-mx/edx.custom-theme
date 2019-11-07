@@ -6,7 +6,7 @@
 // partials directly into this file so that you can break your
 // rules into modular pieces.
 
-.global-header .header-logo a .logo { height:70px !important; }
+.global-header .header-logo a .logo { height:100px !important; }
 .global-header .nav-links .main { margin:41px 0 0 40px !important; }
 .global-header .header-logo .course-header { margin:41px 40px 0 40px !important; }
 
@@ -16,10 +16,11 @@
 
 .wrapper-footer { padding:10px 40px 20px 40px; }
 .wrapper-footer footer.footerna { width:100%; max-width:100%; margin:0; margin-left:0; margin-right:0; }
-.wrapper-footer footer.footerna .colophon { width:100%; }
-.wrapper-footer footer.footerna .wrapper-logo a { max-width:162px; display:inline-block !important;}
+.wrapper-footer footer.footerna .colophon { width:100% !important;}
+.wrapper-footer footer.footerna .wrapper-logo { display:inline-block !important;}
+.wrapper-footer footer.footerna .wrapper-logo a { width:100px !important; display:inline-block !important;}
 .wrapper-footer footer.footerna .wrapper-logo a img { width:100%; }
-.wrapper-footer footer.footerna .copyright { margin:10px; font-size: 0.6875em; color: #767676; text-align: left;}
+.wrapper-footer footer.footerna .copyright { margin: 0 0 0 2% !important; display: inline-block; vertical-align: middle;}
 
 .view-register .introduction header h1, .view-login .introduction header h1, .view-passwordreset .introduction header h1 { text-align: center; margin-bottom: 0; padding-bottom: 20px; margin-top: 20px; padding-top: 20px; }
 .view-login .introduction header{ height:auto !important; background: none !important; }
@@ -31,4 +32,3 @@
 .verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:hover, .dashboard .main-container .my-courses .course .details .enter-course:hover, .wrapper-messages-primary .message.message-upsell .action-view-consent:hover, .wrapper-messages-primary .message.message-status .verification-cta .btn:hover, .wrapper-messages-primary .message.message-status .credit-action .credit-btn:hover, .btn-secondary:hover, .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:hover, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:hover, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order-lines .u-field-order-link .u-field-link:hover, .account-settings-sections .section .account-deletion-details .btn-outline-primary:hover, .account-settings-sections .section .account-deletion-details .delete-confirmation-wrapper .paragon__modal-footer .paragon__btn-outline-primary:hover, .courseware-bookmarks-button .bookmarks-list-button:hover, .verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:focus, .dashboard .main-container .my-courses .course .details .enter-course:focus, .wrapper-messages-primary .message.message-upsell .action-view-consent:focus, .wrapper-messages-primary .message.message-status .verification-cta .btn:focus, .wrapper-messages-primary .message.message-status .credit-action .credit-btn:focus, .btn-secondary:focus, .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:focus, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:focus, .account-settings-sections .section .account-settings-section-body .u-field .u-field-order-lines .u-field-order-link .u-field-link:focus, .account-settings-sections .section .account-deletion-details .btn-outline-primary:focus, .account-settings-sections .section .account-deletion-details .delete-confirmation-wrapper .paragon__modal-footer .paragon__btn-outline-primary:focus, .courseware-bookmarks-button .bookmarks-list-button:focus {  background-color:#264134 !important; color: white !important;}
 
 .wrapper-preview-menu {background-color:#264134 !important;}
-
