@@ -1,0 +1,47 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.urls import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container footerna">
+      <div class="colophon">
+        <div class="wrapper-logo">
+          <a href="/">
+            ## The default logo is a placeholder.
+            ## You can either replace this link entirely or update
+            ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+            ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+            ## can be included in the footer on other sites
+            ## (e.g. a blog or marketing front-end) to provide a consistent
+            ## user experience.  See the branding app for details.
+            <img alt="organization logo" src="${footer['logo_image']}">
+          </a>
+        </div>
+        <div class="copyright">
+          <h6>Contacto</h6>
+          <a href="mailto:contacto@aprendeaser.com.mx">contacto@aprendeaser.com.mx</a><br>
+          <a href="https://www.aprendeaser.com.mx/" target="_blank">www.aprendeaser.com.mx</a><br><br>
+          <small>Copyright © Aprende a Ser</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif
